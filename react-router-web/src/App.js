@@ -66,7 +66,7 @@ class App extends Component {
             <Route
               path="/"
               exact
-              render={(props) => <Home cards={this.state.data}></Home>}
+              render={(props) => (<Home cards={this.state.data}></Home>)}
             />
             <Route path="/Vitamin" exact component={Vitamin} />
           </Switch>
