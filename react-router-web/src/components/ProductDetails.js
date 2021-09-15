@@ -1,10 +1,8 @@
 import React from 'react';
 import './Card.css';
-import {Link} from "react-router-dom";
 import juice from './juice.jpg';
 
-const Card = (props) =>  (
-  <Link to={`/product/${props.card.id}`} className="card-view">
+const ProductDetails = (props) =>  (
   <div className={props.card.animation}>
     <div className="front">
       <img src={juice} alt="Avatar" className="card-image" />
@@ -15,7 +13,6 @@ const Card = (props) =>  (
       </div>
     </div>
   </div>
-  </Link>
 );
 
-export default Card;
+export default ProductDetails ;
