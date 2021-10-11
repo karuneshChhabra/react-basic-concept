@@ -13,6 +13,8 @@ function App() {
     };
     fetchData();
   }, []);
+
+  
   return (
     <div className="App">
       {users.map((user, index) => (
